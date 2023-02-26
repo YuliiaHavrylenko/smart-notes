@@ -9,7 +9,7 @@
             <a href="{% url 'notes.detail' pk=note.id %}" class="text-dark text-decoration-non">
                 <h3>{{note.title}}</h3>
             </a>
-            {{note.text | truncatechars:10}}
+            {{note.text | truncatechars:40}}
         </div>
     </div>
     {% endfor %}
